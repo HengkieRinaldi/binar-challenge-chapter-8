@@ -1,0 +1,23 @@
+<!-- include header -->
+<%- include ('include/_header')  %>
+
+<!-- main page tambah pengguna -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a class="btn btn-outline-primary" href="/dashboard" role="button"> <i class="fa-solid fa-users"></i> lihat semua pengguna yang ada</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2> tambah pengguna</h2>
+            <span>silahkan isi setiap kolom yang ada</span>
+        </div>
+
+        <!-- insert form tambah -->
+        <%- include ('include/_formTambahPengguna') %> 
+    </div>
+</main>
+
+<!-- include footer -->
+<%- include ('include/_footer') %> 

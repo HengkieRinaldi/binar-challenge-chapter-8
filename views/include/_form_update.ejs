@@ -1,0 +1,20 @@
+<div class="pt-3">
+    <form method="POST" id="update_pengguna" class="pt-3 row g-3">
+      <div class="col-md-6">
+        <label for="username" class="form-label">Username</label>
+        <input type="hidden" name="id" value="<%= pemilik._id %> ">
+        <input type="text" class="form-control" name="username" value="<%= pemilik.username  %> ">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Masukan Password Yang Baru</label>
+        <input type="password" class="form-control" name="password" value="">
+      </div>
+      <div class="col-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" name="email" value="<%= pemilik.email  %> ">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary ubah">Simpan</button>
+      </div>
+    </form>
+  </div>

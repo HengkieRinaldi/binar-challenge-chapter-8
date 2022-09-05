@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/game/style.css">
+</head>
+
+<body>
+    <div id="game" class="game p-4">
+        <!-- header -->
+        <div class="judul">
+            <div class="d-flex align-items-center" style="gap: 20px">
+                <button class="back"> <a href="/">
+                        <img style="height: 72px;" src="/game/assets/_.png" alt="back">
+                    </a></button>
+                <button class="back">
+                    <a href="#">
+                        <img src="/game/assets/logo1.png" alt="refresh">
+                    </a>
+                </button>
+                <p style="font-size: 36px; color: #F9B23D; font-weight: 700;"> rock paper Scissor</p>
+            </div>
+        </div>
+        <div class="permainan">
+            <!-- player 1 -->
+            <div class="player1">
+                <ul class="player1">
+                    <center>
+                        <li>
+                            Player 1
+                        </li>
+                        <li id="kosong">
+                            <div>`
+                            <img class="batu" src="/game/assets/batu.png" alt="batu">
+                            </div>
+                        </li>
+                        <li class="kosong">
+                            <div>`
+                            <img class="kertas" src="/game/assets/kertas.png" alt="kertas">
+                            </div>
+                        </li>
+                        <li class="kosong">
+                            <div>`
+                            <img class="gunting" src="/game/assets/gunting.png" alt="gunting">
+                            </div>
+                        </li>
+                    </center>
+                </ul>
+            </div>
+            <div id="vs" class="vs"> VS </div>
+            <!-- com -->
+            <div class="com">
+                <ul class="com">
+                    <center>
+                        <li>
+                            computer
+                        </li>
+                        <li class="kosong">
+                            <img class="batu" src="/game/assets/batu.png" alt="batu">
+                        </li>
+                        <li class="kosong">
+                            <img class="kertas" src="/game/assets/kertas.png" alt="kertas">
+                        </li>
+                        <li class="kosong">
+                            <img class="gunting" src="/game/assets/gunting.png" alt="gunting">
+                        </li>
+                    </center>
+                    <div>
+                        <img class="segarkan" src="/game/assets/refresh.png" alt="segarkan">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script type="text/javascript" src="/game/game.js"></script>
+</body>
+</html>

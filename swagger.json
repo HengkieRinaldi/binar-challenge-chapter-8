@@ -1,0 +1,307 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "binar challenge chapter 8",
+        "version": "0.0.1",
+        "description": "documentation api chapter 8"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:7000",
+            "description": "base URL"
+        }
+    ],
+    "tags": [
+        {
+            "name": "user",
+            "description": "api for users"
+        },
+        {
+            "name": "game",
+            "description": "api for game"
+        },
+        {
+            "name": "authentication",
+            "description": "api for users"
+        }
+    ],
+    "paths": {
+        "/api-user": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "register users",
+                "requestBody":{
+                    "required":"true",
+                    "content":{
+                        "application/x-www-form-urlencoded":{
+                            "schema":{
+                                "type":"object",
+                                "properties":{
+                                    "username":{
+                                        "type":"string",
+                                        "example":"admin"
+                                    },
+                                    "email":{
+                                        "type":"string",
+                                        "example":"admin"
+                                    },
+                                    "password":{
+                                        "type":"string",
+                                        "example":"admin"
+                                    }
+                                }
+                            }      
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "success to register",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to create user",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "failed create user",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "kesalahan data",
+                                        "statusCode": "400"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "get all user",
+                "responses": {
+                    "200": {
+                        "description": "success to get users",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to get users",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api-user:id": {
+            "put": {
+                "tags": [
+                    "user"
+                ],
+                "description": "register users",
+                "responses": {
+                    "200": {
+                        "description": "success to register",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to create user",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "user"
+                ],
+                "description": "register users",
+                "responses": {
+                    "200": {
+                        "description": "success to register",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to create user",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/game-score": {
+            "get": {
+                "tags": [
+                    "game"
+                ],
+                "description": "get game score",
+                "responses": {
+                    "200": {
+                        "description": "get game score",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to get game score",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "game"
+                ],
+                "description": "post game score",
+                "requestBody":{
+                    "required":"true",
+                    "content":{
+                        "application/x-www-form-urlencoded":{
+                            "schema":{
+                                "type":"object",
+                                "properties":{
+                                    "id":{
+                                        "type":"string",
+                                        "example":"admin"
+                                    },
+                                    "win":{
+                                        "type":"integer",
+                                        "example":"1"
+                                    },
+                                    "draw":{
+                                        "type":"integer",
+                                        "example":"1"
+                                    },
+                                    "lose":{
+                                        "type":"integer",
+                                        "example":"1"
+                                    }
+                                }
+                            }      
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "post game score",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to post game score",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "failed save score",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "failed save history",
+                                        "statusCode": "500"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/login": {
+            "post": {
+                "tags": [
+                    "authentication"
+                ],
+                "description": "login user",
+                "requestBody":{
+                    "required":"true",
+                    "content":{
+                        "application/x-www-form-urlencoded":{
+                            "schema":{
+                                "type":"object",
+                                "properties":{
+                                    "username":{
+                                        "type":"string",
+                                        "example":"admin"
+                                    },
+                                    "password":{
+                                        "type":"string",
+                                        "example":"admin"
+                                    }
+                                }
+                            }      
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "login user",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "message": "success to login",
+                                        "statusCode": "200"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerToken": {
+                "type": "http",
+                "scheme": "bearer",
+                "description": "JWT auth here...",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "security": [
+        {
+            "bearerToken": []
+        }
+    ]
+}

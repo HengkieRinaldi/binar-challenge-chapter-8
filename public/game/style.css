@@ -1,0 +1,717 @@
+/* fonts */
+.h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: aqua;
+}
+
+.h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: calibri;
+    color: greenyellow;
+}
+
+.h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: impact;
+    color: red;
+}
+
+.h4 {
+    padding-top: 5%;
+}
+/* navigasi */
+.nav-link {
+    display: flex;
+    color: white;
+    font-weight: bold;    
+}
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.kotak {
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.banner{
+    color: white;
+}
+.theStory {
+    position: relative;
+    top: 55%;
+    font-size: 14px;
+    color: white;
+    text-align: center;    
+}
+/* landing index */
+#landing {
+    background: url(assets/main-bg.jpg)
+    no-repeat center center;
+	background-size: cover;
+    height: 100vh;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+/* landing THE GAMES */
+#theGames {
+    background: url(assets/the-games-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-basis: 50%;
+
+}
+.carousel {
+    margin-right: 20px;
+}
+
+.text{
+    color:white;
+    font-size: 60px;
+    padding: 0 0 0 0;
+    
+}
+/* landing fitur */
+#fitur {
+    background: url(assets/features.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+
+}
+.fiturKiri {  
+    color: white;
+    position: relative;
+    top: 20%;
+    bottom: 0;
+    right: 0%;
+    left: 60%;
+    height: 75%;
+    width: 30%;
+    margin: 0%;
+}
+.judul {
+    color: white;
+    font-size: 50px;
+    margin-top: 0%;
+}
+.subJudul {
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 0%;
+    margin-top: 2cm;
+    margin-bottom: 0px;
+}
+.subJudul1 {
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+/* sistem requirement */
+#sistem {
+    background: url(assets/requirements.png);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+#sistem .judul{
+    display: flex;
+    left: 30%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#sistem .p1{
+    display: flex;
+    position: relative;
+    top: 20%;
+    padding-left: 5%;
+    text-align: justify;
+    font-size: 70px;
+}
+#sistem .kartu{
+    position: relative;
+    top: 20%;
+    padding-left: 5%;
+}
+#sistem .kartu .card-title {
+    color: burlywood;
+}
+#sistem .kartu .card-text {
+    color: white;
+}
+
+/* top score */
+#topScore{
+    background: url(assets/top-score-bg.png);
+    background-size: cover;
+    height: 130vh;
+    color: white;
+
+}
+#topScore .judul{ 
+    height: 50%;
+    width: 50%;
+    position: relative;
+    top: 34%;
+    left: 5%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+#topScore .subText{ 
+    position: absolute;
+    color: white;
+    height: 5%;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+#topScore .ikon{
+    position: relative;
+    width: 50px;
+    border-radius: 150px;
+    background: transparent;
+    padding-left: 23px;
+}
+#topScore .bgikon{
+    width: 50px;
+    border-radius: 150px;
+}
+#topScore .top1{
+    position: relative;
+    top: 31%;
+    left: 46%;
+    width: 30%;
+}
+#topScore .top2{
+    position: relative;
+    top: -12%;
+    left: -20%;
+    width: 30%;
+}
+#topScore .top3{
+    position: relative;
+    top: -12%;
+    left: 46%;
+    width: 30%;
+}
+#topScore card-foot {
+    color: gray;
+    font-size: 2px;
+}
+/* newsletter */
+#berita {
+    background: url(assets/newsletter.png);
+    background-size: cover;
+    height: 130vh;
+    color: white;
+
+}
+#berita .banner{
+    position: relative;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 70px;
+    font-weight: normal;
+    color: white;
+
+}
+#berita .text{
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    top: 30%;
+    left: 50%;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+        
+}
+#berita .sub{
+    position: relative;
+    width: 45%;
+    top: 30%;
+    left: 50%;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    
+}
+#berita .form{
+    position: relative;
+    left: 50%;
+    width: 30%;
+    top: 35%;
+
+}
+#berita .placeholder {
+    color: rgb(179, 179, 28);
+}
+#berita .button-sus {
+    position: relative;
+    top: 10%;
+    background-color: yellow;
+    color: black;
+}
+#berita .logo {
+    position: relative;
+    width: 30%;
+    top: 19%;
+    left: 10%;
+    z-index: 1;
+
+}
+#berita .box {
+    position: relative;
+    z-index: 2;
+    top: -35%;
+}
+#berita .navi-bot {
+    position: absolute;
+    display: grid;
+    background-color: transparent;
+    size: 14px;
+    color: white;
+    width: 90%;
+    left: 5%;
+}
+#berita .foot-bot {
+    position: relative;
+    top: 10%;
+    display: grid;
+    background-color: transparent;
+    size: 14px;
+    color: white;
+    width: 90%;
+    left: 5%;
+}
+#berita .foot {
+    font-size: 10px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+}
+/* media screen */
+/* tablet */
+@media screen and (max-width : 768px) {
+    /* landing-index */
+    #landing {
+        background: url(assets/main-bg.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .display-1 {
+        font-size: 40px;
+        
+    }
+
+    .h4 {
+        font-size: 20px;
+        padding-top: 5%;
+    }
+    .h1{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: aqua;
+    }
+    
+    .h2 {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: calibri;
+        color: greenyellow;
+    }
+
+    .h3 {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: impact;
+        color: red;
+    }
+    .theStory {
+        position: relative;
+        top: 30%;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner{
+        color: white;
+    }
+
+    /* landing THE GAMES */
+    #theGames {
+        background: url(assets/the-games-bg.jpg);
+        background-size: cover;
+        height: 70vh;
+        width: 100%;
+        color: white;
+        padding-top: 20%;
+        padding-bottom: 10%;
+        display: flex;
+        flex-basis: 50%;
+
+    }
+    .carousel {
+        margin-right: 20px;
+    }
+
+    .text{
+        color:white;
+        font-size: 30px;
+        padding: 0 0 0 0;
+        
+    }
+    /* landing fitur */
+    #fitur {
+        background: url(assets/features.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+
+    }
+    .fiturKiri {  
+        color: white;
+        position: relative;
+        top: 25%;
+        bottom: 0;
+        right: 0%;
+        left: 60%;
+        height: 75%;
+        width: 30%;
+        margin: 0%;    
+    }
+    .judul {
+        color: white;
+        font-size: 30px;
+        margin-top: 0%;
+    }
+    .subJudul {
+        color: orange;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 0%;
+        margin-top: 5%;
+        margin-bottom: 0px;
+    }
+    .subJudul1 {
+        color: orange;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 80px;
+    }
+    mb-0 {
+        margin-top: 10%;
+    }
+    /* sistem requirement */
+    .sistem {
+        background: url(assets/requirements.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+    }
+    #sistem .judul{
+        font-size: 19px;
+    }
+    #sistem .p1 {
+        font-size: 40px;
+        left: 5%;
+    }
+    #sistem .kartu{
+        width: 57%;
+        left: -12%;
+    }
+    /* top score */
+    .topScore{
+        background: url(assets/top-score-bg.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: aqua;
+    }
+    #topScore .judul{
+        font-size: 30px;
+        left: 5%;
+        top: 13%;
+    }
+    #topScore .bt {
+        font-size: 12px;
+    }
+    #topScore .top1{
+        left: 30%;
+    }
+    #topScore .top2{
+        left: -34%;
+    }
+    #topScore .top3{
+        left: 39%;
+    }
+    .card {
+        left: 30%;
+    }
+    /* newsletter */
+    #berita {
+        height: 100vh;
+    } 
+    #berita .logo{
+        top: 10%;
+        width: 20%;
+    }
+    #berita .box{
+        top: -26%;
+        right: 15%;
+        height: 50%;
+    }
+    #berita .text{
+        font-size: 12px;
+    }
+    #berita .banner{
+        font-size: 20px;
+    }
+    #berita .sub {
+        font-size: 10px;
+    }
+    #berita .form{
+        width: 50%;
+    }
+    #berita .placeholder{
+        font-size: 12px;
+    }
+    #berita .a{
+        font-size: 8px;
+    }
+}  
+
+/* ukuran hp 575 */
+@media screen and (max-width : 575px) {
+    #fitur {
+        height: 100%;
+    }
+    #fitur .judul{
+        font-size: 20px ;
+    }
+    #fitur .subJudul,.subJudul1{
+        font-size: 20px;
+    }
+}
+/* 780-1000 */
+@media screen and (min-width : 780px) and (max-width : 1000px) {
+    #fitur{
+        height: 100%;
+    }
+    #fitur .judul {
+        font-size: 40px;
+    }
+    #fitur .subJudul{
+        font-size: 25px;
+    }
+    #fitur .subJudul1{
+        font-size: 25px;
+    }
+    #sistem{
+        height: 100%;
+    }
+    #sistem .judul{
+        font-size: 23px;
+    }
+    #sistem .p1{
+        font-size: 40px;
+        padding-top: 10%;
+    }
+    /* top score */
+    .topScore{
+        background: url(assets/top-score-bg.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: aqua;
+    }
+    #topScore .judul{
+        font-size: 50px;
+        left: 5%;
+        top: 13%;
+    }
+    #topScore .bt {
+        font-size: 15px;
+    }
+    #topScore .top1{
+        left: 46%;
+    }
+    #topScore .top2{
+        left: 19%;
+    }
+    #topScore .top3{
+        left: 60%;
+    }
+    /* newsletter */
+    #berita {
+        height: 100vh;
+    } 
+    #berita .logo{
+        top: 15%;
+        width: 25%;
+    }
+    #berita .box{
+        top: -26%;
+        right: 15%;
+        height: 50%;
+    }
+    #berita .text{
+        font-size: 15px;
+        top: 25%;
+    }
+    #berita .banner{
+        font-size: 30px;
+        top: 24%;
+    }
+    #berita .sub {
+        font-size: 10px;
+        top: 25%;
+    }
+    #berita .form{
+        width: 50%;
+        top: 30%;
+    }
+    #berita .placeholder{
+        font-size: 12px;
+    }
+    #berita .a{
+        font-size: 8px;
+    }
+} 
+
+/* Games */
+#game {
+    background-color: #9C835F;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#game .permainan {
+    position: fixed;
+    left: 45%;
+    top: 57%;
+    transform: translate(-40%,-50%);
+    display: flex;
+    margin-left: 0;
+    margin-top: 0;
+}
+#game .judul {
+    color: yellow;
+    font-size: 12px;
+    justify-content: space-between;
+}
+#game .player1 {
+    position: relative;
+    align-items: center;
+    list-style: none;
+    font-size: 50px;
+    padding-left: 0px;
+    padding-right: 35px;
+}
+#game .vs {
+    margin-top: 43%;
+    margin-bottom: 43%;
+    font-size: 50px;
+    color: red;
+}
+#game .com {
+    align-items: center;
+    list-style: none;
+    font-size: 50px;
+}
+
+#game .gambar{
+    width: 100px;
+    padding-top: 20%;
+
+}
+#game .refresh {
+    position: relative;
+    width: 10%;
+    left: 30%;
+    
+}
+#game .batu{
+    background-color: transparent;
+    border-color: transparent;
+    width: 100px;
+    padding-top: 20%;
+}
+#game .kertas{ 
+    background-color: transparent;
+    border-color: transparent;
+    width: 100px;
+    padding-top: 20%;
+}
+#game .gunting{
+    background-color: transparent;
+    border-color: transparent;
+    width: 100px;
+    padding-top: 20%;
+}
+#game .tombol{
+    background-color: transparent;
+}
+.warna {
+    background-color: grey;
+}
+.menang {
+    margin-top: 43%;
+    margin-bottom: 43%;
+    font-size: 38px;
+    color: white;
+    background-color: #4C9654;
+}
+.kalah {
+    margin-top: 43%;
+    margin-bottom: 43%;
+    font-size: 38px;
+    color: white;
+    background-color: #4C9654;
+}
+.draw {
+    margin-top: 43%;
+    margin-bottom: 53%;
+    font-size: 38px;
+    color: white;
+    background-color: #035B0C;
+}
+.segarkan {
+    position: relative;
+    left: -40%;
+    background-color: transparent;
+    width: 50px;
+}
+
+.options{
+    height: 200px;
+    cursor: pointer;
+}
+.back {
+    background-color: transparent;
+    border: transparent;
+}
